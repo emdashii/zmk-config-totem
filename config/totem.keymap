@@ -39,12 +39,12 @@
         };
 
         combo_backspace {
-            bindings = <&kp BACKSPACE>;
+            bindings = <&kp LC(BACKSPACE)>;
             key-positions = <9 8>;
         };
 
-        combo_test {
-            bindings = <&test_macro>;
+        combo_doublequotes {
+            bindings = <&macro_doublequotes>;
             key-positions = <5 6>;
         };
     };
@@ -65,7 +65,7 @@
                 <&kp G &kp I &kp F>;
         };
 
-        test_macro: test_macro {
+        macro_doublequotes: test_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -75,6 +75,8 @@
                 <&kp DOUBLE_QUOTES>,
                 <&macro_tap>,
                 <&kp LC(RIGHT_ARROW)>,
+                <&macro_tap>,
+                <&kp LEFT_ARROW>,
                 <&macro_tap>,
                 <&kp DOUBLE_QUOTES>;
 
