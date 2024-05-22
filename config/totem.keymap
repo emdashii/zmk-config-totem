@@ -45,17 +45,22 @@
 
         combo_doublequotes {
             bindings = <&macro_doublequotes>;
-            key-positions = <5 6>;
+            key-positions = <6 7>;
         };
 
         combo_equal {
             bindings = <&kp EQUAL>;
-            key-positions = <15 16>;
+            key-positions = <16 17>;
         };
 
         combo_dash {
             bindings = <&kp MINUS>;
-            key-positions = <19 18>;
+            key-positions = <18 19>;
+        };
+
+        combo_loremipsum {
+            bindings = <&macro_loremipsum>;
+            key-positions = <4 5>;
         };
     };
 
@@ -75,6 +80,13 @@
                 <&macro_tap>,
                 <&kp DOUBLE_QUOTES>;
         };
+
+        macro_loremipsum: macro_loremipsum {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp LS(L) &kp O &kp R &kp E &kp M &kp SPACE &kp I &kp P &kp S &kp U &kp M &kp SPACE &kp D &kp O &kp L &kp O &kp R &kp SPACE &kp S &kp I &kp T &kp SPACE &kp A &kp M &kp E &kp T &kp COMMA &kp SPACE &kp C &kp O &kp N &kp S &kp E &kp C &kp T &kp E &kp T &kp U &kp R &kp SPACE &kp A &kp D &kp I &kp P &kp I &kp S &kp C &kp I &kp N &kp G &kp SPACE &kp E &kp L &kp I &kp T &kp COMMA &kp SPACE &kp S &kp E &kp D &kp SPACE &kp D &kp O &kp SPACE &kp E &kp I &kp U &kp S &kp M &kp O &kp D &kp SPACE &kp T &kp E &kp M &kp P &kp O &kp R &kp SPACE &kp I &kp N &kp C &kp I &kp D &kp I &kp D &kp U &kp N &kp T &kp SPACE &kp U &kp T &kp SPACE &kp L &kp A &kp B &kp O &kp R &kp E &kp SPACE &kp E &kp T &kp SPACE &kp D &kp O &kp L &kp O &kp R &kp E &kp SPACE &kp M &kp A &kp G &kp N &kp A &kp SPACE &kp A &kp L &kp I &kp Q &kp U &kp A &kp DOT &kp ENTER &kp LS(U) &kp T &kp SPACE &kp E &kp N &kp I &kp M &kp SPACE &kp A &kp D &kp SPACE &kp M &kp I &kp N &kp I &kp M &kp SPACE &kp V &kp E &kp N &kp I &kp A &kp M &kp COMMA &kp SPACE &kp Q &kp U &kp I &kp S &kp SPACE &kp N &kp O &kp S &kp T &kp R &kp U &kp D &kp SPACE &kp E &kp X &kp E &kp R &kp C &kp I &kp T &kp A &kp T &kp I &kp O &kp N &kp SPACE &kp U &kp L &kp L &kp A &kp M &kp C &kp O &kp SPACE &kp L &kp A &kp B &kp O &kp R &kp I &kp S &kp SPACE &kp N &kp I &kp S &kp I &kp SPACE &kp U &kp T &kp SPACE &kp A &kp L &kp I &kp Q &kp U &kp I &kp P &kp SPACE &kp E &kp X &kp SPACE &kp E &kp A &kp SPACE &kp C &kp O &kp M &kp M &kp O &kp D &kp O &kp SPACE &kp C &kp O &kp N &kp S &kp E &kp Q &kp U &kp A &kp T &kp DOT &kp RET &kp LS(D) &kp U &kp I &kp S &kp SPACE &kp A &kp U &kp T &kp E &kp SPACE &kp I &kp R &kp U &kp R &kp E &kp SPACE &kp D &kp O &kp L &kp O &kp R &kp SPACE &kp I &kp N &kp SPACE &kp R &kp E &kp P &kp R &kp E &kp H &kp E &kp N &kp D &kp E &kp R &kp I &kp T &kp SPACE &kp I &kp N &kp SPACE &kp V &kp O &kp L &kp U &kp P &kp T &kp A &kp T &kp E &kp SPACE &kp V &kp E &kp L &kp I &kp T &kp SPACE &kp E &kp S &kp S &kp E &kp SPACE &kp C &kp I &kp L &kp L &kp U &kp M &kp SPACE &kp D &kp O &kp L &kp O &kp R &kp E &kp SPACE &kp E &kp U &kp SPACE &kp F &kp U &kp G &kp I &kp A &kp T &kp SPACE &kp N &kp U &kp L &kp L &kp A &kp SPACE &kp P &kp A &kp R &kp I &kp A &kp T &kp U &kp R &kp DOT &kp RET &kp LS(E) &kp X &kp C &kp E &kp P &kp T &kp E &kp U &kp R &kp SPACE &kp S &kp I &kp N &kp T &kp SPACE &kp O &kp C &kp C &kp A &kp E &kp C &kp A &kp T &kp SPACE &kp C &kp U &kp P &kp I &kp D &kp A &kp T &kp A &kp T &kp SPACE &kp N &kp O &kp N &kp SPACE &kp P &kp R &kp O &kp I &kp D &kp E &kp N &kp T &kp COMMA &kp SPACE &kp S &kp U &kp N &kp T &kp SPACE &kp I &kp N &kp SPACE &kp C &kp U &kp L &kp P &kp A &kp SPACE &kp Q &kp U &kp I &kp SPACE &kp O &kp F &kp F &kp I &kp C &kp I &kp A &kp SPACE &kp D &kp E &kp S &kp E &kp R &kp U &kp N &kp T &kp SPACE &kp M &kp O &kp L &kp L &kp I &kp T &kp SPACE &kp A &kp N &kp I &kp M &kp SPACE &kp I &kp D &kp SPACE &kp E &kp S &kp T &kp SPACE &kp L &kp A &kp B &kp O &kp R &kp U &kp M &kp DOT &kp RET>;
+            label = "MACRO_LOREMIPSUM";
+        };
     };
 
     keymap {
@@ -93,16 +105,16 @@
             //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
             //             ┃     A     ┃     S     ┃     D     ┃     F     ┃     G     ┃   ┃     H     ┃     J     ┃     K     ┃     L     ┃     ;     ┃
             // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
-            // ┃    to 3   ┃     Z     ┃     X     ┃     C     ┃     V     ┃     B     ┃   ┃     N     ┃     M     ┃     ,     ┃     .     ┃     /     ┃ CAPS WORD ┃
+            // ┃  to 3/esc ┃     Z     ┃     X     ┃     C     ┃     V     ┃     B     ┃   ┃     N     ┃     M     ┃     ,     ┃     .     ┃     /     ┃ CAPS WORD ┃
             // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
             //                                     ┃    DEL    ┃    TAB    ┃    ENT    ┃   ┃   REPEAT  ┃   SPACE   ┃ BACKSPACE ┃
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &kp Q            &kp W           &kp E             &kp R        &kp T        &kp Y        &kp U        &kp I             &kp O           &kp P
-       &mt LEFT_META A  &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt LCTRL F  &kp G        &kp H        &mt LCTRL J  &mt LEFT_SHIFT K  &mt LEFT_ALT L  &mt LEFT_META SEMICOLON
-&mo 3  &kp Z            &kp X           &kp C             &kp V        &kp B        &kp N        &kp M        &kp COMMA         &kp DOT         &kp FSLH                 &caps_word
-                                        &lt 4 DEL         &lt 1 TAB    &kp ENTER    &key_repeat  &lt 1 SPACE  &kp BSPC
+              &kp Q            &kp W           &kp E             &kp R        &kp T        &kp Y        &kp U        &kp I             &kp O           &kp P
+              &mt LEFT_META A  &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt LCTRL F  &kp G        &kp H        &mt LCTRL J  &mt LEFT_SHIFT K  &mt LEFT_ALT L  &mt LEFT_META SEMICOLON
+&lt 3 ESCAPE  &kp Z            &kp X           &kp C             &kp V        &kp B        &kp N        &kp M        &kp COMMA         &kp DOT         &kp FSLH                 &caps_word
+                                               &lt 4 DEL         &lt 1 TAB    &kp ENTER    &key_repeat  &lt 1 SPACE  &kp BSPC
             >;
         };
 
@@ -179,7 +191,7 @@
             bindings = <
         &kp INSERT       &kp F7  &kp F8      &kp F9  &kp F10    &kp STAR   &kp N7    &kp N8         &kp N9  &kp PLUS
         &kp CAPS         &kp F4  &kp F5      &kp F6  &kp F11    &kp EQUAL  &kp N4    &kp N5         &kp N6  &kp MINUS
-&trans  &kp PRINTSCREEN  &kp F1  &kp F2      &kp F3  &kp F12    &kp COLON  &kp N1    &kp N2         &kp N3  &kp FSLH   &kp NUMBER_0
+&trans  &kp PRINTSCREEN  &kp F1  &kp F2      &kp F3  &kp F12    &kp COLON  &kp N1    &kp N2         &kp N3  &kp FSLH   &trans
                                  &kp DELETE  &mo 4   &trans     &kp DOT    &lt 4 N0  &kp BACKSPACE
             >;
         };
