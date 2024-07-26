@@ -58,6 +58,11 @@
             key-positions = <17 18>;
         };
 
+        combo_tilde {
+            bindings = <&kp LS(GRAVE)>;
+            key-positions = <16 18>;
+        }
+
         combo_dash {
             bindings = <&kp MINUS>;
             key-positions = <18 19>;
