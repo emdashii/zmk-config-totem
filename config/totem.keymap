@@ -61,7 +61,7 @@
 
         combo_backspace2 {
             bindings = <&kp LC(BACKSPACE)>;
-            key-positions = <17 19>
+            key-positions = <17 19>;
         };
 
         combo_tilde {
@@ -91,8 +91,8 @@
                 <&kp DOUBLE_QUOTES>,
                 <&macro_tap>,
                 <&kp LC(RIGHT_ARROW)>,
-                <&macro_tap>,
-                <&kp LEFT_ARROW>,
+                // <&macro_tap>,
+                // <&kp LEFT_ARROW>,
                 <&macro_tap>,
                 <&kp DOUBLE_QUOTES>;
         };
