@@ -43,6 +43,7 @@
             key-positions = <9 8>;
         };
 
+
         combo_doublequotes {
             bindings = <&macro_doublequotes>;
             key-positions = <6 7>;
@@ -57,6 +58,11 @@
             bindings = <&kp PLUS>;
             key-positions = <17 18>;
         };
+
+        combo_backspace2 {
+            bindings = <&kp LC(BACKSPACE)>;
+            key-positions = <17 19>
+        }
 
         combo_tilde {
             bindings = <&kp LS(GRAVE)>;
@@ -189,18 +195,18 @@
 
             // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
             //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
-            //             ┃   INSERT  ┃    F7     ┃    F8     ┃    F9     ┃    F10    ┃   ┃     *     ┃     7     ┃     8     ┃     9     ┃     +     ┃
+            //             ┃   INSERT  ┃    F7     ┃    F8     ┃    F9     ┃    F10    ┃   ┃     *     ┃     7     ┃     8     ┃     9     ┃     0     ┃
             //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-            //             ┃ CAPSLOCK  ┃    F4     ┃    F5     ┃    F6     ┃    F11    ┃   ┃     =     ┃     4     ┃     5     ┃     6     ┃     -     ┃
+            //             ┃ CAPSLOCK  ┃    F4     ┃    F5     ┃    F6     ┃    F11    ┃   ┃     =     ┃     4     ┃     5     ┃     6     ┃     .     ┃
             // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
-            // ┃           ┃PRINTSCREEN┃    F1     ┃    F2     ┃    F3     ┃    F12    ┃   ┃     :     ┃     1     ┃     2     ┃     3     ┃     /     ┃     0     ┃
+            // ┃           ┃PRINTSCREEN┃    F1     ┃    F2     ┃    F3     ┃    F12    ┃   ┃     :     ┃     1     ┃     2     ┃     3     ┃     /     ┃           ┃
             // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
             //                                     ┃   DEL     ┃    ADJ    ┃   GAMING  ┃   ┃     .     ┃     0     ┃ BACKSPACE ┃
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp INSERT       &kp F7  &kp F8      &kp F9  &kp F10    &kp STAR   &kp N7    &kp N8         &kp N9  &kp PLUS
-        &kp CAPS         &kp F4  &kp F5      &kp F6  &kp F11    &kp EQUAL  &kp N4    &kp N5         &kp N6  &kp MINUS
+        &kp INSERT       &kp F7  &kp F8      &kp F9  &kp F10    &kp STAR   &kp N7    &kp N8         &kp N9  &kp N0
+        &kp CAPS         &kp F4  &kp F5      &kp F6  &kp F11    &kp EQUAL  &kp N4    &kp N5         &kp N6  &kp DOT
 &trans  &kp PRINTSCREEN  &kp F1  &kp F2      &kp F3  &kp F12    &kp COLON  &kp N1    &kp N2         &kp N3  &kp FSLH   &trans
                                  &kp DELETE  &mo 4   &trans     &kp DOT    &lt 4 N0  &kp BACKSPACE
             >;
