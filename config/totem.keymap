@@ -62,7 +62,7 @@
         combo_backspace2 {
             bindings = <&kp LC(BACKSPACE)>;
             key-positions = <17 19>
-        }
+        };
 
         combo_tilde {
             bindings = <&kp LS(GRAVE)>;
