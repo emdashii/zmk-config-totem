@@ -43,7 +43,6 @@
             key-positions = <9 8>;
         };
 
-
         combo_doublequotes {
             bindings = <&macro_doublequotes>;
             key-positions = <6 7>;
@@ -59,8 +58,8 @@
             key-positions = <17 18>;
         };
 
-        combo_backspace2 {
-            bindings = <&kp LC(BACKSPACE)>;
+        combo_delend {
+            bindings = <&macro_delend>;
             key-positions = <17 19>;
         };
 
@@ -78,6 +77,11 @@
             bindings = <&macro_loremipsum>;
             key-positions = <4 5>;
         };
+
+        combo_copyline {
+            bindings = <&macro_copyline>;
+            key-positions = <16 19>;
+        };
     };
 
     macros {
@@ -86,15 +90,37 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_tap>,
-                <&kp LC(LEFT_ARROW)>,
+                <&kp LC(RIGHT_ARROW)>,  // First move right to ensure we're inside or at end of word
                 <&macro_tap>,
-                <&kp DOUBLE_QUOTES>,
+                <&kp LC(LEFT_ARROW)>,   // Then move to beginning of current word
                 <&macro_tap>,
-                <&kp LC(RIGHT_ARROW)>,
-                // <&macro_tap>,
-                // <&kp LEFT_ARROW>,
+                <&kp DOUBLE_QUOTES>,    // Add opening quote
                 <&macro_tap>,
-                <&kp DOUBLE_QUOTES>;
+                <&kp LC(RIGHT_ARROW)>,  // Move to end of word
+                <&macro_tap>,
+                <&kp DOUBLE_QUOTES>;    // Add closing quote
+        };
+
+        macro_copyline: copy_current_line {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap>,
+                <&kp HOME>,             // Go to beginning of line
+                <&macro_tap>,
+                <&kp LS(END)>,          // Select to end of line
+                <&macro_tap>,
+                <&kp LC(C)>;            // Copy selection
+        };
+
+        macro_delend: delete_to_end_of_line {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap>,
+                <&kp LS(END)>,          // Select from cursor to end of line
+                <&macro_tap>,
+                <&kp DELETE>;           // Delete selection
         };
 
         macro_loremipsum: macro_loremipsum {
